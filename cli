@@ -1,0 +1,27 @@
+#! /usr/bin/env php
+
+<? php
+
+
+require "vendor/autoload.php";
+
+use Symfony\Component\Console\Application;
+
+use Symfony\Component\Console\Input\InputInterface;
+
+use Symfony\Component\Console\Output\OutputInterface;
+
+$app = new Application();
+
+$app->register('sayHelloTo')
+    ->addArgument('name')
+    ->setCode(function (InputInterface $input, OutputInterface $output){
+      $output->writeln('Hello Snooper');
+    });
+
+
+$app->run();
+
+?>
+
+
