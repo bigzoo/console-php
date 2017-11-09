@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: chris
- * Date: 11/7/17
- * Time: 5:58 PM
- */
 
 namespace Acme;
 
@@ -15,7 +9,7 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputArgument;
 
-class SayHelloCommand extends Command {
+class NewCommand extends Command {
     public function configure(){
         $this->setName('sayHelloTo')
              ->setDescription('Offer a greeting to the given person.')
